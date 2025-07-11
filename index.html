@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Venkata Sai G | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; background: #f0f0f0; color: #333; }
+    nav {
+      position: fixed; top: 0; width: 100%; background: #222; z-index: 999;
+      text-align: center; padding: 12px;
+    }
+    nav a {
+      color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #f39c12; }
+
+    .hero {
+      height: 100vh; background: #222; color: white;
+      display: flex; flex-direction: column; justify-content: center;
+      align-items: center; text-align: center; padding-top: 60px;
+    }
+    .hero img {
+      width: 160px; height: 160px; border-radius: 50%;
+      object-fit: cover; border: 4px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 20px;
+    }
+    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.1em; opacity: 0.9; }
+
+    section {
+      padding: 80px 20px; max-width: 900px; margin: 0 auto;
+    }
+    h2 {
+      font-size: 2em; margin-bottom: 20px;
+      border-bottom: 2px solid #f39c12; display: inline-block; padding-bottom: 5px;
+    }
+    .card {
+      background: #fff; padding: 20px; border-radius: 10px;
+      margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    ul { list-style: none; padding-left: 0; }
+    ul li { margin-bottom: 10px; }
+
+    .stack-container {
+      display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px;
+    }
+    .tech {
+      background: #222; color: white; padding: 8px 16px; border-radius: 20px;
+      font-size: 0.95em; font-weight: 500;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+    .tech:hover {
+      background: #f39c12; color: #000;
+    }
+
+    footer {
+      text-align: center; padding: 20px; background: #222; color: white;
+      margin-top: 60px;
+    }
+
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#techstack">Tech Stack</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <img src="profile.png" alt="Venkata Sai G">
+    <h1>Venkata Sai G</h1>
+    <p>CSE Student | Full-Stack Developer | Data Analyst & AI Enthusiast</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I'm a B.Tech student in Computer Science and Engineering at Alliance University.
+        Passionate about full-stack web development, smart automation, and embedded systems.
+        I enjoy solving real-world problems using AI, IoT, and mobile-based solutions.
+      </p>
+    </div>
+  </section>
+
+  <section id="techstack">
+    <h2>Tech Stack</h2>
+    <div class="card">
+      <div class="stack-container">
+        <span class="tech">C</span>
+        <span class="tech">Python</span>
+        <span class="tech">HTML</span>
+        <span class="tech">CSS</span>
+        <span class="tech">Node.js</span>
+        <span class="tech">Express.js</span>
+        <span class="tech">MongoDB</span>
+        <span class="tech">Arduino IDE</span>
+        <span class="tech">React Native</span>
+        <span class="tech">Sensors</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Automated Mist Fan (2024)</h3>
+      <p>
+        Built a smart cooling system using temperature and humidity sensors with microcontroller logic.
+        Enabled Bluetooth-based smartphone control. 
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Marks Entering System</h3>
+      <p>
+        A secure full-stack grading app using HTML, CSS, JS, Node.js, and MongoDB. Includes authentication,
+        score auto-calculation, and PDF report generation.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Hospital Recommendation & Bed Allocation</h3>
+      <p>
+        An AI-based mobile and web platform to locate nearby hospitals using symptoms and GPS.
+        Features ambulance booking, distance tracking, and GSM-based communication.
+      </p>
+    </div>
+  </section>
+
+  <section id="internship">
+    <h2>Internship</h2>
+    <div class="card">
+      <h3>Software Intern – Additive Manufacturing Lab</h3>
+      <p>
+        Developed an Automated Mist Fan prototype integrating IoT sensors and smartphone control.
+        Applied design patterns such as <strong>Observer</strong> and <strong>Factory</strong>
+        for modular design and sensor-driven responses.Design patent: <strong>434647-001</strong>.
+      </p>
+      <p><strong>Duration:</strong> July–August 2024</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li> Data Structures – UC San Diego (Feb 2024)</li>
+        <li> Machine Learning with Python – IBM (2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>Competitions & Events</h2>
+    <div class="card">
+      <ul>
+        <li> Robothon 2024 – Jyothi Institute of Technology</li>
+        <li> Industrial Visits: ABB Robotics, IMTEX 2024, IoT Show – BIEC, KTPO</li>
+        <li> Co-Ordinator – Anvaya Viksit & 3D Printing Workshop</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> <a href="mailto:gurramkondavenkatsai@gmail.com">gurramkondavenkatsai@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91-8919329767</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gurramkonda-venkata-sai-99589827a" target="_blank">gurramkonda-venkata-sai</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Venkata Sai G. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
